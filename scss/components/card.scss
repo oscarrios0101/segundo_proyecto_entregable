@@ -1,5 +1,7 @@
 .card {
   display: flex;
+  height: 700px;
+  justify-content: space-around;
   flex-direction: column;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -13,7 +15,7 @@
 
   &__image {
     width: 100%;
-    height: auto;
+    height: 250px;
     border-radius: 4px;
     margin-bottom: 1rem;
   }
@@ -21,11 +23,14 @@
   &__content {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     gap: 0.5rem;
+    // border: 2px solid red;
   }
 
   &__title {
-    @include heading-large;
+    @include heading-medium;
+    font-size: 1.125rem;
   }
 
   &__description {
@@ -39,6 +44,7 @@
   }
 
   &__button {
+    margin-top: auto;
     background-color: #f2f2f2;
     border: none;
     border-radius: 4px;
@@ -60,8 +66,10 @@
 }
 
 .card__image {
-  max-width: 300px;
-  object-fit: cover;
+  width: 300px;
+  height: 50%;
+  // max-height: 1000px;
+  object-fit: scale-down;
   object-position: center;
   border-radius: 4px;
   margin-bottom: 1rem;
