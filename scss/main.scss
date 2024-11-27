@@ -1,0 +1,17 @@
+@import "variables";
+@import "base";
+@import "components/card";
+@import "components/navbar";
+@import "components/hero";
+@import "components/grid_wrapper";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.featured-products {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,20 @@
+.hero__content {
+  text-align: center;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Cormorant Garamond", serif;
+}
+.hero__content-title {
+  font-family: "Cormorant Garamond", serif;
+}
+.hero__content .hero__image {
+  width: 85%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 4px;
+}/*# sourceMappingURL=hero.css.map */

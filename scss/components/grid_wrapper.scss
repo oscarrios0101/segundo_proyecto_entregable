@@ -1,0 +1,11 @@
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+  width: 100%;
+  h2 {
+    text-align: center;
+    border: 2px solid red;
+  }
+}

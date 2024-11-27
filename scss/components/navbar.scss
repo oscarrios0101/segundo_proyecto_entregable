@@ -1,0 +1,62 @@
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+
+  &__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 2rem;
+    font-family: "Cormorant Garamond", serif;
+
+    &-link {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    // border: 2px solid red;
+
+    &-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    &-item {
+      margin-right: 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-link {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.2s ease;
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
+
+      &:hover {
+        color: #ccc;
+      }
+    }
+  }
+
+  .material-symbols-outlined {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}

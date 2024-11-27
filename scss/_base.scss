@@ -1,0 +1,19 @@
+h1,
+h2 {
+  font-family: $font-heading;
+}
+
+p {
+  font-family: $font-body;
+  @include body-text;
+}
+
+.hero {
+  &__title {
+    @include heading-large;
+  }
+}
+
+.featured-products {
+  @include heading-medium;
+}

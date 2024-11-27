@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jewelry Store</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/scss/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <a href="#" class="navbar__logo-link">Jewelry Store</a>
+        </div>
+        <div class="navbar__menu">
+          <ul class="navbar__menu-list">
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__menu-link">Home</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__menu-link">About</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__menu-link">Contact</a>
+            </li>
+            <li class="navbar__menu-item">
+              <span class="material-symbols-outlined"> shopping_cart </span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Welcome to Our Jewelry Store</h1>
+          <p class="hero__description">
+            Discover a world of beauty and elegance with our exquisite jewelry
+            collection.
+          </p>
+          <img
+            class="hero__image"
+            src="/images/premium_photo-1709033404514-c3953af680b4.avif"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="grid-wrapper"></div>
+      </section>
+
+      <section class="product-categories"></section>
+
+      <section class="about-us"></section>
+
+      <section class="contact"></section>
+    </main>
+
+    <footer></footer>
+
+    <!-- templates -->
+    <template id="product-template">
+      <div class="card">
+        <img class="card__image" src="" alt="" />
+        <div class="card__content">
+          <h3 class="card__title"></h3>
+          <p class="card__description"></p>
+          <p class="card__price"></p>
+          <button class="card__button">Add to Cart</button>
+        </div>
+      </div>
+    </template>
+    <script src="main.js"></script>
+  </body>
+</html>

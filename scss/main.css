@@ -1,0 +1,204 @@
+h1,
+h2 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  color: #717275;
+}
+
+.hero__title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #454545;
+}
+
+.featured-products {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  font-weight: 200;
+  color: #454545;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(26, 26, 26, 0.02), 0 4px 8px rgba(26, 26, 26, 0.04), 0 8px 16px rgba(26, 26, 26, 0.08);
+  border: 1px solid rgba(184, 184, 184, 0.3);
+}
+.card > * {
+  text-align: center;
+}
+.card__image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.card__title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #454545;
+}
+.card__description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  color: #717275;
+}
+.card__price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+.card__button {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.card__button:hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card__button:hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(26, 26, 26, 0.12);
+}
+.card__button:active {
+  background-color: #d9d9d9;
+}
+
+.card__image {
+  max-width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 2rem;
+  font-family: "Cormorant Garamond", serif;
+}
+.navbar__logo-link {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar__menu {
+  display: flex;
+}
+.navbar__menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar__menu-item {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar__menu-item:last-child {
+  margin-right: 0;
+}
+.navbar__menu-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar__menu-link:hover {
+  color: #ccc;
+}
+.navbar .material-symbols-outlined {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.hero__content {
+  text-align: center;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  color: #717275;
+}
+.hero__content-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #454545;
+}
+.hero__content .hero__image {
+  width: 85%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 4px;
+  border: 1px solid rgba(184, 184, 184, 0.3);
+  box-shadow: 0 2px 4px rgba(26, 26, 26, 0.02), 0 4px 8px rgba(26, 26, 26, 0.04), 0 8px 16px rgba(26, 26, 26, 0.08);
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+  width: 100%;
+}
+.grid-wrapper h2 {
+  text-align: center;
+  border: 2px solid red;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.featured-products {
+  width: 100%;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,110 @@
+// Color Variables
+$pearl-white: #f8f7f6;
+$platinum: #e8e9eb;
+$sterling-silver: #b8b8b8;
+$graphite: #454545;
+$onyx-black: #1a1a1a;
+$champagne: #f7e7ce;
+$rose-gold: #b76e79;
+$antique-gold: #c4a484;
+$velvet-gray: #717275;
+$silk-gray: #a9a9b0;
+$mist-white: #f4f4f6;
+$shadow-gray: #2c2c2e;
+
+// UI Specific Colors
+$text-primary: $graphite;
+$text-light: $pearl-white;
+$background-primary: $pearl-white;
+$background-accent: $platinum;
+$border-color: $sterling-silver;
+
+// Font Families
+$font-heading: "Cormorant Garamond", serif;
+$font-body: "Montserrat", sans-serif;
+
+// Common Mixins
+@mixin luxury-gradient {
+  background: linear-gradient(135deg, $pearl-white, $platinum);
+}
+
+@mixin dark-gradient {
+  background: linear-gradient(135deg, $graphite, $onyx-black);
+}
+
+@mixin glass-effect {
+  background: rgba($pearl-white, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba($sterling-silver, 0.2);
+}
+
+@mixin product-shadow {
+  box-shadow: 0 2px 4px rgba($onyx-black, 0.02),
+    0 4px 8px rgba($onyx-black, 0.04), 0 8px 16px rgba($onyx-black, 0.08);
+}
+
+@mixin elegant-border {
+  border: 1px solid rgba($sterling-silver, 0.3);
+}
+
+@mixin separator {
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      $sterling-silver,
+      transparent
+    );
+  }
+}
+
+// Typography Mixins
+@mixin heading-large {
+  font-family: $font-heading;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: $text-primary;
+}
+
+@mixin heading-medium {
+  font-family: $font-heading;
+  font-size: 2rem;
+  font-weight: 200;
+  color: $text-primary;
+}
+
+@mixin body-text {
+  font-family: $font-body;
+  font-size: 1rem;
+  font-weight: 200;
+  color: $velvet-gray;
+}
+
+// Transition Mixins
+@mixin smooth-transition {
+  transition: all 0.3s ease;
+}
+
+@mixin hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba($onyx-black, 0.12);
+  }
+}
+
+// Layout Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid-center {
+  display: grid;
+  place-items: center;
+}
