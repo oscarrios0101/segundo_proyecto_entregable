@@ -1,6 +1,9 @@
 const productWrapper = document.querySelector(".grid-wrapper");
 const productTemplate = document.getElementById("product-template").content;
+const cartTemplate = document.getElementById("cart-template").content;
+const cartWrapper = document.querySelector(".cart__items");
 let productsArray = [];
+const cartItems = [];
 // Fetching products with Axios
 //fetching two endpoints as requested
 const apiUrl = "https://fakestoreapi.com/products/category/jewelery";
@@ -17,6 +20,16 @@ window.addEventListener("DOMContentLoaded", async () => {
     alert(`Error fetching products: ${error.message}`);
   }
 });
+
+function populateCart() {
+  cartWrapper.innerHTML = "";
+  cartItems.forEach((product) => {
+    const cart = cartTemplate.cloneNode(true);
+    cart.querySelector(".cart__item-description").textContent = product.title;
+    cart.querySelector(".cart__item-price").textContent = `$${product.price}`;
+    cartWrapper.appendChild(cart);
+  });
+}
 function populateGrid(productsArray) {
   productsArray.forEach((product) => {
     const card = productTemplate.cloneNode(true);
@@ -51,11 +64,8 @@ productWrapper.addEventListener("click", async (event) => {
 });
 
 function addToCart(productDetails) {
-  const cartItems = document.querySelector(".cart__items");
-  const newItem = document.createElement("li");
-  newItem.classList.add("cart__item");
-  newItem.textContent = `${productDetails.title} - $${productDetails.price}`;
-  cartItems.appendChild(newItem);
+  cartItems.push(productDetails);
+  populateCart();
 }
 //function to show cart
 document.addEventListener("click", (event) => {

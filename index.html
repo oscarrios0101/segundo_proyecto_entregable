@@ -62,9 +62,10 @@
             <h2 class="cart__title">Your Cart</h2>
             <span class="close-icon material-symbols-outlined"> close </span>
           </div>
-          <ul class="cart__items"></ul>
+          <div class="cart__items">
+
+          </div>
           <button class="card__button">Checkout</button>
-        </div>
       </section>
       <section class="featured-products">
         <h2>Featured Products</h2>
@@ -113,6 +114,13 @@
           <p class="card__price"></p>
           <button class="card__button">Add to Cart</button>
         </div>
+      </div>
+    </template>
+    <template id="cart-template">
+      <div class="cart__item">
+          <div class="cart__item-description"></div>
+          <div class="cart__item-price"></div>
+          <span class="remove-icon material-symbols-outlined"> close </span>
       </div>
     </template>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
